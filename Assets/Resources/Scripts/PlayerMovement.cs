@@ -22,20 +22,20 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Move the player using arrow keys
-        if (Input.GetKey(KeyCode.UpArrow))
+        // Move the player using WASD keys
+        if (Input.GetKey(KeyCode.W))
         {
             rb.AddForce(playerCamera.transform.forward * 10);
         }
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.S))
         {
             rb.AddForce(-playerCamera.transform.forward * 10);
         }
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.A))
         {
             rb.AddForce(-playerCamera.transform.right * 10);
         }
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.D))
         {
             rb.AddForce(playerCamera.transform.right * 10);
         }
